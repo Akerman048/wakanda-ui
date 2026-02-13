@@ -8,7 +8,7 @@ import VideoBlock from "~/components/VideoBlock";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Hall of Zero Limits" },
-    { name: "description", content: "Welcome to React Router!" },
+    { name: "description", content: "Wakanda UI — Hall of Zero Limits" },
   ];
 }
 
