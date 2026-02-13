@@ -1,11 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "api/index.js", "use": "@vercel/node" },
-    { "src": "build/client/**", "use": "@vercel/static" }
-  ],
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/api/index.js" }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": "build/client",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
 }
